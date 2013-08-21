@@ -48,6 +48,7 @@
   };
 
   $(function() {
+    $(document).foundation();
     syncFirstPageHeight();
     $(window).on('resize', syncFirstPageHeight);
     return $(window).on('scroll', handleScroll);
