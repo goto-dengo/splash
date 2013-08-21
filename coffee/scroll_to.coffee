@@ -18,6 +18,9 @@ scrollTo = ($el) ->
     $('body').removeData 'is-smooth-scrolling'
     $(window).trigger 'scroll'
 
+  if $el.data('scroll-to') == '#contact'
+    $('#contact-form :input').first().focus()
+
 $(document).on 'click', '[data-scroll-to]', (e) ->
   $el = $(@)
   e.preventDefault()

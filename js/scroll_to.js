@@ -14,12 +14,15 @@
     if ($el.closest('li')[0]) {
       $el.closest('li').addClass('active').siblings().removeClass('active');
     }
-    return $('body').animate({
+    $('body').animate({
       scrollTop: getTargetOffset($el)
     }, 400, function() {
       $('body').removeData('is-smooth-scrolling');
       return $(window).trigger('scroll');
     });
+    if ($el.data('scroll-to') === '#contact') {
+      return $('#contact-form :input').first().focus();
+    }
   };
 
   $(document).on('click', '[data-scroll-to]', function(e) {
