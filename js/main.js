@@ -51,7 +51,10 @@
     $(document).foundation();
     syncFirstPageHeight();
     $(window).on('resize', syncFirstPageHeight);
-    return $(window).on('scroll', handleScroll);
+    $(window).on('scroll', handleScroll);
+    return $.scrollDepth({
+      elements: ['#first-page', '#what-we-do', '#our-apps', '#our-services', '#team', '#press', '#contact']
+    });
   });
 
 }).call(this);

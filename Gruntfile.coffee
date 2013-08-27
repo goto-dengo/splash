@@ -47,6 +47,7 @@ module.exports = (grunt) ->
         files:
           'scripts.js': [
             'js/jquery.js'
+            'js/jquery.scrolldepth.js'
             'js/jquery.form.js'
             'js/foundation.js'
             'js/foundation.topbar.js'

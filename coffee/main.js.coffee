@@ -41,3 +41,6 @@ $ ->
   syncFirstPageHeight()
   $(window).on 'resize', syncFirstPageHeight
   $(window).on 'scroll', handleScroll
+
+  $.scrollDepth
+    elements: ['#first-page', '#what-we-do', '#our-apps', '#our-services', '#team', '#press', '#contact']
