@@ -17,19 +17,12 @@
   li.name
     white-space: nowrap
 
-body.scrolled
-  .top-bar
-    opacity: 1
-
-  #first-page
-    .first-page-content
-      opacity: 0
-
 .page
   position: relative
   background: url('img/bg.png')
   padding: 10px
   border-bottom: 1px solid #ddd
+  -webkit-transform: translate3d(0,0,0)
 
   .page-header
     text-align: center
@@ -59,14 +52,14 @@ body.scrolled
     background-color: rgba(0, 0, 0, 0.3)
 
   .logo
-    width: 150px
-    height: 150px
-    margin: 30px 0
+    width: 120px
+    height: 120px
+    margin: 15px 0
 
   .tagline
     color: #fff
     text-shadow: 0px -1px 1px #444
-    font-size: 36px
+    font-size: 32px
 
   .button
     margin-top: 30px
@@ -158,7 +151,7 @@ body.scrolled
 
     > a
       display: inline-block
-      margin: 0 30px 30px
+      margin: 0 0 30px
       opacity: 0.8
       transition: opacity 0.1s linear
       -moz-transition: opacity 0.1s linear
@@ -240,6 +233,14 @@ footer
       margin-bottom: 0
 
 @media only screen and (min-width: 768px)
+  body.scrolled
+    .top-bar
+      opacity: 1
+
+    #first-page
+      .first-page-content
+        opacity: 0
+
   .page
     padding: 20px 10px
 
@@ -258,6 +259,9 @@ footer
       top: 10px
       left: 10px
       margin: 0
+      width: 150px
+      height: 150px
+
 
     .tagline
       font-size: 45px
@@ -306,6 +310,11 @@ footer
   #team
     .person-img
       max-width: 150px
+
+  #press
+    .press-logos
+      > a
+        margin: 0 30px 30px
 
   #contact
     > form
