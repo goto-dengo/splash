@@ -30,7 +30,7 @@ highlightNavSection = (scrollTop) ->
     $(".top-bar-section li").removeClass('active')
 
 handleScroll = ->
-  scrollTop = $('body').scrollTop()
+  scrollTop = $(window).scrollTop()
 
   $('body')[if scrollTop > 0 then 'addClass' else 'removeClass']('scrolled')
 

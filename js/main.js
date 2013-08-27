@@ -42,7 +42,7 @@
 
   handleScroll = function() {
     var scrollTop;
-    scrollTop = $('body').scrollTop();
+    scrollTop = $(window).scrollTop();
     $('body')[scrollTop > 0 ? 'addClass' : 'removeClass']('scrolled');
     return highlightNavSection(scrollTop);
   };

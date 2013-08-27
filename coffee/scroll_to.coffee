@@ -12,7 +12,7 @@ scrollTo = ($el) ->
                      .siblings()
                      .removeClass('active')
 
-  $('body').animate
+  $('html, body').animate
     scrollTop: getTargetOffset($el)
   , 400, ->
     $('body').removeData 'is-smooth-scrolling'

@@ -14,7 +14,7 @@
     if ($el.closest('li')[0]) {
       $el.closest('li').addClass('active').siblings().removeClass('active');
     }
-    $('body').animate({
+    $('html, body').animate({
       scrollTop: getTargetOffset($el)
     }, 400, function() {
       $('body').removeData('is-smooth-scrolling');

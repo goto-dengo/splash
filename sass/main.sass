@@ -4,7 +4,6 @@
 .clearfix
   clear: both
 
-
 .top-bar
   position: fixed
   top: 0
@@ -13,6 +12,7 @@
   margin-bottom: 0
   opacity: 0
   transition: opacity 0.2s linear
+  -moz-transition: opacity 0.2s linear
 
   li.name
     white-space: nowrap
@@ -52,10 +52,11 @@ body.scrolled
 
   .first-page-content
     transition: opacity 0.2s linear
+    -moz-transition: opacity 0.2s linear
     opacity: 1
     position: relative
     height: 100%
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.3)
 
   .logo
     width: 150px
@@ -160,6 +161,7 @@ body.scrolled
       margin: 0 30px 30px
       opacity: 0.8
       transition: opacity 0.1s linear
+      -moz-transition: opacity 0.1s linear
 
       &:hover
         opacity: 1

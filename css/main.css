@@ -11,7 +11,8 @@
   z-index: 2;
   margin-bottom: 0;
   opacity: 0;
-  transition: opacity 0.2s linear; }
+  transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear; }
   .top-bar li.name {
     white-space: nowrap; }
 
@@ -44,10 +45,11 @@ body.scrolled #first-page .first-page-content {
   background-size: cover; }
   #first-page .first-page-content {
     transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
     opacity: 1;
     position: relative;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.3); }
   #first-page .logo {
     width: 150px;
     height: 150px;
@@ -125,7 +127,8 @@ body.scrolled #first-page .first-page-content {
     display: inline-block;
     margin: 0 30px 30px;
     opacity: 0.8;
-    transition: opacity 0.1s linear; }
+    transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear; }
     #press .press-logos > a:hover {
       opacity: 1; }
   #press .press-logos .govloop {
