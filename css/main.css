@@ -66,7 +66,7 @@
     text-shadow: 0px -1px 1px white; }
 
 #our-apps .apps .app {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: table-row; }
   #our-apps .apps .app .app-icon-wrapper, #our-apps .apps .app .app-description-wrapper {
     display: table-cell;
@@ -83,7 +83,11 @@
     font-size: 18px;
     margin-bottom: 5px; }
   #our-apps .apps .app .app-description {
-    text-shadow: 0px -1px 1px white; }
+    text-shadow: 0px -1px 1px white;
+    margin-bottom: 0; }
+  #our-apps .apps .app .more {
+    margin-top: 5px;
+    display: inline-block; }
 
 #our-services .services .service .service-icon-wrapper, #our-services .services .service .service-description-wrapper {
   display: table-cell;
@@ -229,12 +233,12 @@ footer {
 
   #our-apps .apps {
     margin-top: 40px; }
-    #our-apps .apps .app .app-icon-wrapper {
-      width: 80px; }
-    #our-apps .apps .app .icon {
-      font-size: 80px; }
-    #our-apps .apps .app .app-description .more {
-      display: inline-block; }
+    #our-apps .apps .app {
+      margin-bottom: 40px; }
+      #our-apps .apps .app .app-icon-wrapper {
+        width: 80px; }
+      #our-apps .apps .app .icon {
+        font-size: 80px; }
 
   #our-services .services {
     margin-top: 40px; }
