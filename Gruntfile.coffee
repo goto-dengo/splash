@@ -47,10 +47,14 @@ module.exports = (grunt) ->
         files:
           'scripts.js': [
             'js/jquery.js'
+            'js/jquery.form.js'
             'js/foundation.js'
             'js/foundation.topbar.js'
+            'js/extensions.js'
             'js/scroll_to.js'
             'js/main.js'
+            'js/subscribe_to_mailing_list.js'
+            'js/contact_us.js'
           ]
 
     watch:
