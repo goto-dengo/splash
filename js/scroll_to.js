@@ -21,8 +21,9 @@
       return $(window).trigger('scroll');
     });
     if ($el.data('scroll-to') === '#contact') {
-      return $('#contact-form :input').first().focus();
+      $('#contact-form :input').first().focus();
     }
+    return ga('send', 'event', 'scrollTo', 'scrollTo', $el.data('scroll-to'));
   };
 
   $(document).on('click', '[data-scroll-to]', function(e) {

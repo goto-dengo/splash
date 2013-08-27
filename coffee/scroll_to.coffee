@@ -21,6 +21,9 @@ scrollTo = ($el) ->
   if $el.data('scroll-to') == '#contact'
     $('#contact-form :input').first().focus()
 
+  ga('send', 'event', 'scrollTo', 'scrollTo', $el.data('scroll-to'))
+
+
 $(document).on 'click', '[data-scroll-to]', (e) ->
   $el = $(@)
   e.preventDefault()
