@@ -60,6 +60,44 @@ body.app .app-page .main-screenshot-row .call-to-action .or {
 body.app .app-page .main-screenshot-row .call-to-action .find-out-more-button {
   margin-top: 1.03em;
 }
+body.app .app-page #features {
+  padding-top: 10px;
+}
+body.app .app-page .feature {
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+body.app .app-page .feature .description-wrapper {
+  margin-top: 70px;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+body.app .app-page .feature .img-wrapper {
+  margin-left: 32%;
+  margin-right: -2%;
+}
+body.app .app-page .feature.reverse {
+  margin-left: 0;
+  margin-right: 2%;
+}
+body.app .app-page .feature.reverse .description-wrapper {
+  float: right;
+}
+body.app .app-page .feature.reverse .img-wrapper {
+  margin-left: -2%;
+  margin-right: 32%;
+}
+body.app .app-page .feature .feature-name {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+body.app .app-page .feature .feature-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
 @media only screen and (min-width: 768px) {
   body.app {
     padding-top: 40px;
