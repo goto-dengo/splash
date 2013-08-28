@@ -12,9 +12,6 @@ body.app .top-bar {
 body.app .top-bar li.name {
   white-space: nowrap;
 }
-body.app .top-bar .top-bar-section {
-  padding-right: 15px;
-}
 body.app .app-page {
   background: url("/img/bg.png");
   border-bottom: 1px solid #ccc;
