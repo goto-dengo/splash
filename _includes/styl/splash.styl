@@ -74,6 +74,19 @@ body.splash
         margin-bottom: 20px
         display: table-row
 
+        > a
+          color: #222
+          display: block
+          padding: 20px
+          border-radius: 5px
+          margin: 0 -10px
+          line-height: 20px
+          transition: background-color 0.15s linear
+          -moz-transition: background-color 0.15s linear
+
+          &:hover
+            background-color: #ddd
+
         .app-icon-wrapper, .app-description-wrapper
           display: table-cell
           vertical-align: top
@@ -92,14 +105,12 @@ body.splash
           font-weight: bold
           font-size: 18px
           margin-bottom: 5px
+          display: block
 
         .app-description
           text-shadow: 0px -1px 1px #fff
           margin-bottom: 0
-
-        .more
-          margin-top: 5px
-          display: inline-block
+          display block
 
   #our-services
     .services

@@ -71,6 +71,19 @@ body.splash #our-apps .apps .app {
   margin-bottom: 20px;
   display: table-row;
 }
+body.splash #our-apps .apps .app > a {
+  color: #222;
+  display: block;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 -10px;
+  line-height: 20px;
+  transition: background-color 0.15s linear;
+  -moz-transition: background-color 0.15s linear;
+}
+body.splash #our-apps .apps .app > a:hover {
+  background-color: #ddd;
+}
 body.splash #our-apps .apps .app .app-icon-wrapper,
 body.splash #our-apps .apps .app .app-description-wrapper {
   display: table-cell;
@@ -90,14 +103,12 @@ body.splash #our-apps .apps .app .app-name {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
+  display: block;
 }
 body.splash #our-apps .apps .app .app-description {
   text-shadow: 0px -1px 1px #fff;
   margin-bottom: 0;
-}
-body.splash #our-apps .apps .app .more {
-  margin-top: 5px;
-  display: inline-block;
+  display: block;
 }
 body.splash #our-services .services .service .service-icon-wrapper,
 body.splash #our-services .services .service .service-description-wrapper {
