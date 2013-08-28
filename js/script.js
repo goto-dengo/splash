@@ -13,5 +13,6 @@ layout: none
 {% include js/scroll_to.js %}
 {% include js/subscribe_to_mailing_list.js %}
 {% include js/main.js %}
+{% include js/splash.js %}
 {% endcapture %}
 {{ js }}

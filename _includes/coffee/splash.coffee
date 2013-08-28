@@ -37,7 +37,8 @@ handleScroll = ->
   highlightNavSection(scrollTop)
 
 $ ->
-  $(document).foundation()
+  return unless $('#first-page')[0]
+
   syncFirstPageHeight()
   $(window).on 'resize', syncFirstPageHeight
   $(window).on 'scroll', handleScroll
