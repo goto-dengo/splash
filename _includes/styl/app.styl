@@ -21,76 +21,62 @@ body.app
       max-width: 1000px
       margin: 0 auto
 
+    .dobt-logo-wrapper
+      text-align center
+      padding 10px 0 0
+
+      img
+        max-width: 120px
+
     h2, h3
       text-align: center
       color: #0f1e3f
 
     h2
       text-shadow: 0px -2px 2px #fff
-      padding-top: 20px
       margin-bottom: 10px
+      font-size: 22px
 
     h3
       font-weight: 400
-      font-size: 20px
+      font-size: 14px
 
     .main-screenshot-row
-      display: table-row
-
-      .img-wrapper, .call-to-action
-        display: table-cell
-        vertical-align: middle
-
-      .img-wrapper
-        width: 65%
-
-      .call-to-action
+      .demo-or-more
+        margin-top 20px
         text-align: center
-        width: 35%
 
         .or
           color: #999
           text-transform: uppercase
 
+        .schedule-demo-button
+          margin-bottom 0.75em
+
         .find-out-more-button
-          margin-top: 1.03em
+          margin-top: 0.75em
 
     #features
       padding-top: 10px
+      margin 0 -20px
 
     .feature
-      margin-left: 2%
-      margin-bottom: 20px
+      margin -10px 0 30px
 
       .description-wrapper
-        margin-top: 70px
-        float: left
-        width: 30%
-        text-align: center
+        padding 0 25px
 
       .img-wrapper
-        margin-left: 32%
-        margin-right: -2%
-
-      &.reverse
-        margin-left: 0
-        margin-right: 2%
-
-        .description-wrapper
-          float: right
-
-        .img-wrapper
-          margin-left: -2%
-          margin-right: 32%
+        padding 0
 
       .feature-name
         font-weight: bold
-        font-size: 22px
+        font-size: 18px
         margin-bottom: 15px
 
       .feature-description
         font-weight: 400
-        font-size: 15px
+        font-size: 14px
         line-height: 20px
 
     .call-to-action
@@ -103,3 +89,62 @@ body.app
 
     .top-bar
       display: block
+
+    .app-page
+      .dobt-logo-wrapper
+        display none
+
+      h2
+        padding-top: 20px
+        font-size 2.3125em
+
+      h3
+        font-size 20px
+
+      .button
+        padding-top: 1em;
+        padding-right: 2em;
+        padding-bottom: 1.0625em;
+        padding-left: 2em;
+        font-size: 1.25em;
+
+
+      .main-screenshot-row
+        display: table-row
+
+        .img-wrapper, .demo-or-more
+          display: table-cell
+          vertical-align: middle
+
+        .img-wrapper
+          width: 65%
+
+        .demo-or-more
+          text-align: center
+          width: 35%
+
+          .or
+            color: #999
+            text-transform: uppercase
+
+          .schedule-demo-button
+            margin-bottom: 1.03em
+
+          .find-out-more-button
+            margin-top: 1.03em
+
+      #features
+        margin 0
+
+      .feature
+        .description-wrapper
+          margin-top: 70px
+          text-align: center
+          padding 0
+
+        .feature-name
+          font-size: 22px
+          margin-bottom: 15px
+
+        .feature-description
+          font-size: 15px
