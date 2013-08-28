@@ -3,7 +3,7 @@ $(document).on "submit", "#contact-form", (e) ->
 
   email = $(@).find('input[name=email]').val()
   name = $(@).find('input[name=name]').val()
-  message = $(@).find('input[name=message]').val()
+  message = $(@).find('textarea[name=message]').val()
 
   return errors() unless email && name && message
 
