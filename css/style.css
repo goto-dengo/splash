@@ -6,5 +6,7 @@ layout: none
 {% include css/foundation.css %}
 {% include css/font-awesome.css %}
 {% include css/main.css %}
+{% include css/splash.css %}
+{% include css/app.css %}
 {% endcapture %}
 {{ css | strip_newlines }}

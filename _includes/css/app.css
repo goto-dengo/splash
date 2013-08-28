@@ -1,0 +1,70 @@
+body.app {
+  background-color: #eee;
+}
+body.app .top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 0;
+  display: none;
+}
+body.app .top-bar li.name {
+  white-space: nowrap;
+}
+body.app .top-bar .top-bar-section {
+  padding-right: 15px;
+}
+body.app .app-page {
+  background: url("/img/bg.png");
+  border-bottom: 1px solid #ccc;
+  padding: 0 20px;
+}
+body.app .app-page .app-page-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body.app .app-page h2,
+body.app .app-page h3 {
+  text-align: center;
+  color: #0f1e3f;
+}
+body.app .app-page h2 {
+  text-shadow: 0px -2px 2px #fff;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+body.app .app-page h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+body.app .app-page .main-screenshot-row {
+  display: table-row;
+}
+body.app .app-page .main-screenshot-row .img-wrapper,
+body.app .app-page .main-screenshot-row .call-to-action {
+  display: table-cell;
+  vertical-align: middle;
+}
+body.app .app-page .main-screenshot-row .img-wrapper {
+  width: 65%;
+}
+body.app .app-page .main-screenshot-row .call-to-action {
+  text-align: center;
+  width: 35%;
+}
+body.app .app-page .main-screenshot-row .call-to-action .or {
+  color: #999;
+  text-transform: uppercase;
+}
+body.app .app-page .main-screenshot-row .call-to-action .find-out-more-button {
+  margin-top: 1.03em;
+}
+@media only screen and (min-width: 768px) {
+  body.app {
+    padding-top: 40px;
+  }
+  body.app .top-bar {
+    display: block;
+  }
+}
