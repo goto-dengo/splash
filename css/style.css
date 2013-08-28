@@ -1,0 +1,10 @@
+---
+layout: none
+---
+
+{% capture css %}
+{% include css/foundation.css %}
+{% include css/font-awesome.css %}
+{% include css/main.css %}
+{% endcapture %}
+{{ css | strip_newlines }}
