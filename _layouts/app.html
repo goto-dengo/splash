@@ -1,0 +1,78 @@
+{% include header.ext %}
+
+<nav class='top-bar'>
+  <ul class='title-area'>
+    <li class='name'>
+      <h1>
+        <a href='/'>Department of Better Technology</a>
+      </h1>
+    </li>
+    <li class='toggle-topbar'>
+      <a href='#'>
+        <span class='icon icon-reorder'></span>
+      </a>
+    </li>
+  </ul>
+  <section class='top-bar-section'>
+    <ul class='right'>
+      <li>
+        <a href='/#our-apps'>Apps</a>
+      </li>
+      <li>
+        <a href='/#our-services'>Services</a>
+      </li>
+      <li>
+        <a href='/#team'>Our team</a>
+      </li>
+      <li>
+        <a href='/#contact'>Contact us</a>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+<div class='app-page'>
+  <div class='app-page-inner'>
+
+    <div class='dobt-logo-wrapper'>
+      <a href='/'><img src='/img/dobt_logo.png' /></a>
+    </div>
+
+    <h2>{{ page.app.header }}</h2>
+    <h3>{{ page.app.tagline }}</h3>
+
+    <div class='main-screenshot-row'>
+      <div class='img-wrapper'>
+        <img src='{{ page.app.main_screenshot }}' />
+      </div>
+      <div class='demo-or-more'>
+        <a href='/#contact' class='button radius schedule-demo-button'>Schedule a demo</a>
+        <div class='or'>or</div>
+        <a data-scroll-to='#features' class='button secondary radius find-out-more-button'>Find out more <span class='icon icon-chevron-down'></span></a>
+      </div>
+    </div>
+
+    <hr />
+
+    <div id='features'>
+      {% for feature in page.app.features %}
+        <div class='feature row'>
+          <div class='img-wrapper small-12 large-8 {% cycle 'push-4', '' %} columns'>
+            <img src='{{ feature.screenshot }}' />
+          </div>
+          <div class='description-wrapper small-12 large-4 {% cycle 'pull-8', '' %} columns'>
+            <div class='feature-name'>{{ feature.name }}</div>
+            <p class='feature-description'>{{ feature.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class='call-to-action'>
+      <a href='/#contact' class='button success radius'>Start using {{ page.app.name }} today &rarr;</a>
+    </div>
+
+  </div>
+</div>
+
+{% include footer.ext %}

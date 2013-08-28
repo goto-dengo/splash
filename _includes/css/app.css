@@ -1,0 +1,150 @@
+body.app {
+  background-color: #eee;
+}
+body.app .top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 0;
+  display: none;
+}
+body.app .top-bar li.name {
+  white-space: nowrap;
+}
+body.app .app-page {
+  background: url("/img/bg.png");
+  border-bottom: 1px solid #ccc;
+  padding: 0 20px;
+}
+body.app .app-page .app-page-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body.app .app-page .dobt-logo-wrapper {
+  text-align: center;
+  padding: 10px 0 0;
+}
+body.app .app-page .dobt-logo-wrapper img {
+  max-width: 120px;
+}
+body.app .app-page h2,
+body.app .app-page h3 {
+  text-align: center;
+  color: #0f1e3f;
+}
+body.app .app-page h2 {
+  text-shadow: 0px -2px 2px #fff;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+body.app .app-page h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+body.app .app-page .main-screenshot-row .demo-or-more {
+  margin-top: 20px;
+  text-align: center;
+}
+body.app .app-page .main-screenshot-row .demo-or-more .or {
+  color: #999;
+  text-transform: uppercase;
+}
+body.app .app-page .main-screenshot-row .demo-or-more .schedule-demo-button {
+  margin-bottom: 0.75em;
+}
+body.app .app-page .main-screenshot-row .demo-or-more .find-out-more-button {
+  margin-top: 0.75em;
+}
+body.app .app-page #features {
+  padding-top: 10px;
+  margin: 0 -20px;
+}
+body.app .app-page .feature {
+  margin: -10px 0 30px;
+}
+body.app .app-page .feature .description-wrapper {
+  padding: 0 25px;
+}
+body.app .app-page .feature .img-wrapper {
+  padding: 0;
+}
+body.app .app-page .feature .feature-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+body.app .app-page .feature .feature-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+body.app .app-page .call-to-action {
+  text-align: center;
+  margin: 40px 0 30px;
+}
+@media only screen and (min-width: 768px) {
+  body.app {
+    padding-top: 40px;
+  }
+  body.app .top-bar {
+    display: block;
+  }
+  body.app .app-page .dobt-logo-wrapper {
+    display: none;
+  }
+  body.app .app-page h2 {
+    padding-top: 20px;
+    font-size: 2.3125em;
+  }
+  body.app .app-page h3 {
+    font-size: 20px;
+  }
+  body.app .app-page .button {
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1.0625em;
+    padding-left: 2em;
+    font-size: 1.25em;
+  }
+  body.app .app-page .main-screenshot-row {
+    display: table-row;
+  }
+  body.app .app-page .main-screenshot-row .img-wrapper,
+  body.app .app-page .main-screenshot-row .demo-or-more {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  body.app .app-page .main-screenshot-row .img-wrapper {
+    width: 65%;
+  }
+  body.app .app-page .main-screenshot-row .demo-or-more {
+    text-align: center;
+    width: 35%;
+  }
+  body.app .app-page .main-screenshot-row .demo-or-more .or {
+    color: #999;
+    text-transform: uppercase;
+  }
+  body.app .app-page .main-screenshot-row .demo-or-more .schedule-demo-button {
+    margin-bottom: 1.03em;
+  }
+  body.app .app-page .main-screenshot-row .demo-or-more .find-out-more-button {
+    margin-top: 1.03em;
+  }
+  body.app .app-page #features {
+    margin: 0;
+  }
+  body.app .app-page .feature .description-wrapper {
+    margin-top: 70px;
+    text-align: center;
+    padding: 0;
+  }
+  body.app .app-page .feature .feature-name {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  body.app .app-page .feature .feature-description {
+    font-size: 15px;
+  }
+}

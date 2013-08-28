@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     {% if page.title %}
-      {% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+      {% capture title %}{{ page.title }} · {{ site.title }}{% endcapture %}
     {% else %}
       {% assign title = site.title %}
     {% endif %}
@@ -15,8 +15,8 @@
 
     <link rel="stylesheet" href="{{site.url}}/css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="img/dobt_logo.png">
-    <link rel="apple-touch-icon-precomposed" href="img/dobt_logo.png">
+    <link rel="shortcut icon" href="/img/dobt_logo.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/dobt_logo.png">
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,4 +25,4 @@
     <script src="/js/libs/modernizr-2.5.3.min.js"></script>
   </head>
 
-  <body>
+  <body class='{{page.body_class}}'>
