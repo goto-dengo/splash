@@ -109,7 +109,8 @@ body.app .app-page .call-to-action {
     font-size: 1.25em;
   }
   body.app .app-page .main-screenshot-row {
-    display: table-row;
+    display: table;
+    width: 100%;
   }
   body.app .app-page .main-screenshot-row .img-wrapper,
   body.app .app-page .main-screenshot-row .demo-or-more {
