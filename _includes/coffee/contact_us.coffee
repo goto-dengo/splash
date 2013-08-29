@@ -4,19 +4,21 @@ $(document).on "submit", "#contact-form", (e) ->
   email = $(@).find('input[name=email]').val()
   name = $(@).find('input[name=name]').val()
   message = $(@).find('textarea[name=message]').val()
+  verify = $(@).find('input[name=verify]').val()
 
-  return errors() unless email && name && message
+  unless email && name && message && verify
+    return feedback("Please fill out all the fields.")
 
   $(@).find('button').disable_button()
 
   $(@).ajaxSubmit
-    success: =>
+    success: (data) =>
       $(@).find('button').disable_button()
-      $(@).resetForm()
+      feedback("Verification failed.")
 
-      $('#contact-us-errors').hide()
-      $('#contact-us-success').fadeIn(300)
+      if data.status == 'success'
+        $(@).resetForm()
+        feedback("Thanks for contacting us. We'll be in touch shortly.")
 
-errors = ->
-  $('#contact-us-success').hide()
-  $('#contact-us-errors').fadeIn(300)
+feedback = (msg) ->
+  $('#contact-us-feedback').hide().text(msg).fadeIn(300)

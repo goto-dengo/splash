@@ -226,13 +226,16 @@ body_class: splash
       </div>
     </div>
     <div class='row'>
+      <div class='small-12 large-3 columns'>
+        <label>Verify</label>
+      </div>
+      <div class='small-12 large-9 columns'>
+        <input type='text' name='verify' placeholder='What is one plus one?'></textarea>
+      </div>
+    </div>
+    <div class='row'>
       <div class='small-12 large-9 large-offset-3 columns'>
-        <p class='left' id='contact-us-errors' style='display: none;'>
-          Please fill out your name, email, and a message.
-        </p>
-        <p class='left' id='contact-us-success' style='display: none;'>
-          Thanks for contacting us. We'll be in touch shortly.
-        </p>
+        <p class='left' id='contact-us-feedback' style='display: none;'></p>
         <button class='button radius right' data-disabled-text='Sending...'>Send message</button>
       </div>
     </div>
