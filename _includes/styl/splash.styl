@@ -12,6 +12,11 @@ body.splash
     li.name
       white-space: nowrap
 
+  &.scrolled
+    .top-bar
+      opacity: 1
+
+
   .page
     position: relative
     background: url('/img/bg.png')
@@ -49,7 +54,7 @@ body.splash
     .logo
       width: 120px
       height: 120px
-      margin: 15px 0
+      margin: 50px 0 15px
 
     .tagline
       color: #fff
@@ -218,9 +223,6 @@ body.splash
 @media only screen and (min-width: 768px)
   body.splash
     &.scrolled
-      .top-bar
-        opacity: 1
-
       #first-page
         .first-page-content
           opacity: 0

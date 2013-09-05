@@ -11,6 +11,9 @@ body.splash .top-bar {
 body.splash .top-bar li.name {
   white-space: nowrap;
 }
+body.splash.scrolled .top-bar {
+  opacity: 1;
+}
 body.splash .page {
   position: relative;
   background: url("/img/bg.png");
@@ -48,7 +51,7 @@ body.splash #first-page .first-page-content {
 body.splash #first-page .logo {
   width: 120px;
   height: 120px;
-  margin: 15px 0;
+  margin: 50px 0 15px;
 }
 body.splash #first-page .tagline {
   color: #fff;
@@ -208,9 +211,6 @@ body.splash #contact > form textarea {
   height: 7em;
 }
 @media only screen and (min-width: 768px) {
-  body.splash.scrolled .top-bar {
-    opacity: 1;
-  }
   body.splash.scrolled #first-page .first-page-content {
     opacity: 0;
   }
