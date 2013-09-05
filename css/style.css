@@ -8,5 +8,6 @@ layout: none
 {% include css/main.css %}
 {% include css/splash.css %}
 {% include css/app.css %}
+{% include css/simple_page.css %}
 {% endcapture %}
 {{ css | strip_newlines }}

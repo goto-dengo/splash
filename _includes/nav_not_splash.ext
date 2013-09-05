@@ -1,0 +1,33 @@
+<nav class='top-bar'>
+  <ul class='title-area'>
+    <li class='name'>
+      <h1>
+        <a href='/'>
+          <span class='show-for-small'>Dep't of Better Tech</span>
+          <span class='hide-for-small'>Department of Better Technology</span>
+        </a>
+      </h1>
+    </li>
+    <li class='toggle-topbar'>
+      <a href='#'>
+        <span class='icon icon-reorder'></span>
+      </a>
+    </li>
+  </ul>
+  <section class='top-bar-section'>
+    <ul class='right'>
+      <li>
+        <a href='/#our-apps'>Apps</a>
+      </li>
+      <li>
+        <a href='/#our-services'>Services</a>
+      </li>
+      <li>
+        <a href='/#team'>Our team</a>
+      </li>
+      <li>
+        <a href='/#contact'>Contact us</a>
+      </li>
+    </ul>
+  </section>
+</nav>

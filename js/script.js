@@ -13,6 +13,7 @@ layout: none
 {% include js/contact_us.js %}
 {% include js/scroll_to.js %}
 {% include js/subscribe_to_mailing_list.js %}
+{% include js/download_ebook.js %}
 {% include js/main.js %}
 {% include js/splash.js %}
 {% endcapture %}
