@@ -3,7 +3,7 @@
   var feedback;
 
   $(document).on("submit", "#contact-form", function(e) {
-    var email, message, name, verify,
+    var analytics_info, email, message, name, verify,
       _this = this;
 
     e.preventDefault();
@@ -15,7 +15,13 @@
       return feedback("Please fill out all the fields.");
     }
     $(this).find('button').disable_button();
+    analytics_info = "Previous page: " + document.referrer;
     return $(this).ajaxSubmit({
+      data: {
+        more: {
+          analytics_info: analytics_info
+        }
+      },
       success: function(data) {
         $(_this).find('button').disable_button();
         feedback("Verification failed.");

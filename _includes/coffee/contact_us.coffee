@@ -11,7 +11,12 @@ $(document).on "submit", "#contact-form", (e) ->
 
   $(@).find('button').disable_button()
 
+  analytics_info = "Previous page: #{document.referrer}"
+
   $(@).ajaxSubmit
+    data:
+      more:
+        analytics_info: analytics_info
     success: (data) =>
       $(@).find('button').disable_button()
       feedback("Verification failed.")
