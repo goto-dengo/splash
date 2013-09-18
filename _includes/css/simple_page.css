@@ -18,6 +18,9 @@ body.simple_page h2 {
   margin-bottom: 10px;
   font-size: 22px;
 }
+body.simple_page .page-not-found {
+  padding: 100px 0;
+}
 body.simple_page h3 {
   font-weight: 400;
   font-size: 14px;
