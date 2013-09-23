@@ -3,6 +3,7 @@ layout: none
 ---
 
 {% capture js %}
+{% include js/respond.js %}
 {% include js/jquery.form.js %}
 {% include js/jquery.scrolldepth.js %}
 {% include js/jquery.placeholder.js %}

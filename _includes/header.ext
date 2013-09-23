@@ -25,6 +25,7 @@
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" href="{{site.url}}/css/font-awesome-ie7.css">
     <![endif]-->
 
     <script src="/js/libs/modernizr-2.5.3.min.js"></script>
