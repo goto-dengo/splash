@@ -61,6 +61,17 @@ body.splash #first-page .tagline {
 body.splash #first-page .button {
   margin-top: 30px;
 }
+body.splash .get-involved-row form {
+  display: inline;
+}
+body.splash .get-involved-row form input,
+body.splash .get-involved-row form button {
+  display: inline;
+  width: auto;
+}
+body.splash .get-involved-row form button {
+  padding: 0 10px;
+}
 body.splash #what-we-do {
   border-top: 1px solid #666;
   margin-top: 400px;
