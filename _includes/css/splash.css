@@ -154,6 +154,9 @@ body.splash #team .person-title {
   font-size: 0.875em;
   font-style: italic;
 }
+body.splash #team .person-social {
+  font-size: 0.875em;
+}
 body.splash #press .press-logos {
   text-align: center;
 }
